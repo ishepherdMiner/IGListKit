@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:IGListKitDemo/IGListKitDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:IGListKit.xcodeproj">
    </FileRef>
    <FileRef
