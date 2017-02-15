@@ -11,8 +11,8 @@
 
 @interface ViewController () <IGListAdapterDataSource>
 
-@property (nonatomic,copy) JASubSectionController *sectionController;
-
+@property (nonatomic,strong) JASubSectionController *sectionController;
+@property (nonatomic,strong) IGListAdapter *adapter;
 @end
 
 @implementation ViewController
@@ -24,6 +24,11 @@
     IGListAdapterUpdater *updater = [[IGListAdapterUpdater alloc] init];
     IGListAdapter *adapter = [[IGListAdapter alloc] initWithUpdater:updater viewController:self workingRangeSize:0];
     adapter.collectionView = collectionView;
+    adapter.dataSource = self;
+    self.adapter = adapter;
+    
+    collectionView.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:collectionView];
 }
 
 - (NSArray<id<IGListDiffable>> *)objectsForListAdapter:(IGListAdapter *)listAdapter {

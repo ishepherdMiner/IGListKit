@@ -29,5 +29,12 @@
     return cell;
 }
 
+- (void)didUpdateToObject:(id)object {
+    
+}
+
+- (void)didSelectItemAtIndex:(NSInteger)index {
+    
+}
 
 @end
