@@ -87,7 +87,7 @@ IGLK_SUBCLASSING_RESTRICTED
  Initializes a new `IGListAdapter` object.
 
  @param updater An object that manages updates to the collection view.
- @param viewController   The view controller that will house the adapter.
+ @param viewController   The view controller that will house the adapter.包含适配器的视图控制器。
  @param workingRangeSize The number of objects before and after the viewport to consider within the working range.
 
  @return A new list adapter object.
